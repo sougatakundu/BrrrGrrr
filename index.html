@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrrrGrrr</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+           <a href="#" class="nav__logo">
+              Brrr<span>Grrr</span>
+           </a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+
+                 <li class="nav__item">
+                    <a href="#home" class="nav__link">Solution to your Hungerr!</a>
+                 </li >
+              </ul>
+
+           </div>
+        </nav>
+     </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+               <div class="home__container container grid">
+                  <div class="home__content">
+                     <div class="home__data">
+                        <h3 class="home__subtitle">
+                           Hey! <span>Welcome to</span>
+                        </h3>
+                        <h1 class="home__title">BrrrGrrr</h1>
+                         <h3 class="home__education">At your service</h3>
+                         <p class="home__description">
+                           Create your customized burger, make it your meal for the day!
+                         </p>
+   
+                         <a href="#create" class="button">Create</a>
+                     </div>
+                  </div>
+                  <div class="home__image">
+                    <img class="home__img" src="/burgerAnim.png" alt="Burger animation" width="470" height="625">
+                 </div>       
+               </div>
+            </section>
+        <!--==================== SKILLS ====================-->
+        <section id="create" class="menu ">
+         <div>
+            <div class="menu__data">
+              
+               <form class="box">
+                 <h2 class="menu__title">
+                  <span>MENU</span>
+               </h2>
+                  <div class="menu_items">
+                    <div class="menu_item">
+                      <p>Bun</p>
+                      <div>
+                        <input type="checkbox" name="item" value="Flour" data-price="25">
+                        <label for="Flour">Flour  <h3>₹ 25</h3></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="item" value="Wheat" data-price="30">
+                        <label for="Wheat">Wheat  <h3>₹ 30</h3></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="item" value="Mix" data-price="35">
+                        <label for="Mix">Mix  <h3>₹ 35</h3></label>
+                      </div>
+                    </div>
+                    <div class="menu_item">
+                      <p>Patty</p>
+                      <div>
+                        <input type="checkbox" name="item" value="Veggie" data-price="40">
+                        <label for="Veggie">Veggie  <h3>₹ 40</h3></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="item" value="Panner" data-price="50">
+                        <label for="Panner">Panner  <h3>₹ 50</h3></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="item" value="Chicken" data-price="60">
+                        <label for="Chicken">Chicken  <h3>₹ 60</h3></label>
+                      </div>
+                    </div>
+                    <div class="menu_item">
+                      <p>Toppings</p>
+                      <div>
+                        <input type="checkbox" name="item" value="Onion" data-price="15">
+                        <label for="Onion">Onion  <h3>₹ 15</h3></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="item" value="Tomatoe" data-price="20">
+                        <label for="Tomatoe">Tomatoe  <h3>₹ 20</h3></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="item" value="Lettuce" data-price="25">
+                        <label for="Lettuce">Lettuce  <h3>₹ 25</h3></label>
+                      </div>
+                    </div>
+                    <div class="menu_item">
+                      <p>Ketchup</p>
+                      <div>
+                        <input type="checkbox" name="item" value="Chilly" data-price="10">
+                        <label for="Chilly">Chilly  <h3>₹ 10</h3></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="item" value="Mustard" data-price="15">
+                        <label for="Mustard">Mustard  <h3>₹ 15</h3></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="item" value="Mayonnaise" data-price="20">
+                        <label for="Mayonnaise">Mayonnaise  <h3>₹ 20</h3></label>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <button type="button" onclick="calculateTotal()">Submit</button>
+                  <div class="total box_total">
+                    <div style="color:#4CAF50"> Total:<h2 style="color: #4CAF50;" id="totalAmount">₹ 0.00</h2></div>
+                    <div><pi style="display: block;" id="bill"></p></div>
+                  </div>
+                  <h2 id = "thank" style="color: hsl(358 96% 43% / 1);visibility: hidden;">Thank You for you order! Enjoy your meal🍔</h2>
+                </form>
+              
+
+    
+            </div>
+         </div>
+      </section>
+        </main>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+          <div class="footer__container">
+             <span class="footer__title">
+                &#169; Copyright <span id="year"> </span> sougata kundu
+             </span>
+          </div>
+       </footer>
+
+       <script src="index.js"></script>
+</body>
+</html>
